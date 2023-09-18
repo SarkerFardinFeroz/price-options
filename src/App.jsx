@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <NavBar />
-      <h1 className="text-7xl bg-rose-900">Vite + React</h1>
+
       <PriceOptions />
     </>
   );

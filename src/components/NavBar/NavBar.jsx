@@ -12,17 +12,17 @@ const NavBar = () => {
   ];
 
   return (
-    <nav>
+    <nav className="mx-auto max-w-7xl pt-6">
       <div
-        className="md:hidden text-2xl  bg-yellow-200 p-6 text-black "
+        className="md:hidden text-2xl bg-white border p-6 text-black "
         onClick={() => setOpen(!open)}
       >
         {open === true ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
       <ul
-        className={`md:flex duration-1000 gap-10 absolute md:static ${
-          open ? "top-16" : "-top-60"
-        } bg-yellow-200 text-black px-10 shadow-lg`}
+        className={`justify-center bg-white font-bold p-5 rounded-xl md:flex duration-1000 gap-10 absolute md:static ${
+          open ? "top-24" : "-top-60"
+        }  text-black border px-10 shadow-lg`}
       >
         {routes.map((route) => (
           <Link key={route.id} route={route} />
